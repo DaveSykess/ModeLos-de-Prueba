@@ -1,58 +1,81 @@
-<link href="responsive_style.css" type="text/css" rel="stylesheet"/>
-<br>
-<br>
-<div class="cont">
-  <div class="form sign-in">
-    <h2>BIENVENIDO</h2>
-    <label>
-      <span>Correo Electrónico</span>
-      <input type="email" />
-    </label>
-    <label>
-      <span>Contrase&nacute;a</span>
-      <input type="password" />
-    </label>
-    <p class="forgot-pass">Olvidó la Contraseña?</p>
-    <button type="button" class="submit">Iniciar Sesión</button>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Bienvenido al Spa</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- fevicon -->
+      <link rel="icon" href="imagen/images.png" />
+      <!--css-->
+      <link href="responsive_style.css" type="text/css" rel="stylesheet"/>
+      
+    </head>
 
-  </div>
-  <div class="sub-cont">
-    <div class="img">
-      <div class="img__text m--up">
+    <body>
+      <br>
+      <br>
+      <div class="cont">
+        <div class="form sign-in">
+          <h2>BIENVENIDO</h2>
+          <label>
+            <span>Correo Electrónico</span>
+            <input type="email" />
+          </label>
+          <label>
+            <span>Contrase&nacute;a</span>
+            <input type="password" />
+          </label>
+          <p class="forgot-pass">Olvidó la Contraseña?</p>
+          <button type="button" class="submit" onclick="location.href='pagina_principal.html'">Iniciar Sesión</button>
 
-        <h3>¿No tienes una cuenta? ¡Regístrate!<h3>
+        </div>
+        <div class="sub-cont">
+          <div class="img">
+            <div class="img__text m--up">
+
+              <h3>¿No tienes una cuenta? ¡Regístrate!<h3>
+            </div>
+            <div class="img__text m--in">
+
+              <h3>Si ya tienes una cuenta, sólo ingresa tu correo y contraseña e inicia sesión.<h3>
+            </div>
+            <div class="img__btn">
+              <span class="m--up">Regístrate</span>
+              <span class="m--in">Inicia Sesión</span>
+            </div>
+          </div>
+          <div class="form sign-up">
+            <h2>CREAR UNA CUENTA</h2>
+            <label>
+              <span>Nombre</span>
+              <input type="text" />
+            </label>
+            <label>
+              <span>Correo Electrónico</span>
+              <input type="email" />
+            </label>
+            <label>
+              <span>Contraseña</span>
+              <input type="password" />
+            </label>
+            <button type="button" class="submit">Registrate</button>
+
+          </div>
+        </div>
       </div>
-      <div class="img__text m--in">
 
-        <h3>Si ya tienes una cuenta, sólo ingresa tu correo y contraseña e inicia sesión.<h3>
-      </div>
-      <div class="img__btn">
-        <span class="m--up">Regístrate</span>
-        <span class="m--in">Inicia Sesión</span>
-      </div>
-    </div>
-    <div class="form sign-up">
-      <h2>CREAR UNA CUENTA</h2>
-      <label>
-        <span>Nombre</span>
-        <input type="text" />
-      </label>
-      <label>
-        <span>Correo Electrónico</span>
-        <input type="email" />
-      </label>
-      <label>
-        <span>Contraseña</span>
-        <input type="password" />
-      </label>
-      <button type="button" class="submit">Registrate</button>
-
-    </div>
-  </div>
-</div>
-
-<script>
-  document.querySelector('.img__btn').addEventListener('click', function() {
-    document.querySelector('.cont').classList.toggle('s--signup');
-  });
-</script>
+      <script>
+        document.querySelector('.img__btn').addEventListener('click', function() {
+          document.querySelector('.cont').classList.toggle('s--signup');
+        });
+      </script>
+    </body>
+</html>
