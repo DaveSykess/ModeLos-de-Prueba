@@ -8,7 +8,13 @@
 
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  background: #ffffff;
+  background-image: url(imagen/spa-elements.jpg);
+  padding: 140px 100px;
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
 }
 
 input,
@@ -26,7 +32,7 @@ button {
 }
 
 .cont {
-  border-radius: 20px;
+  border-radius: 30px;
   overflow: hidden;
   position: relative;
   width: 900px;
@@ -260,7 +266,7 @@ input {
 .submit {
   margin-top: 40px;
   margin-bottom: 20px;
-  background: #cc892b;
+  background: #9e6b24;
   text-transform: uppercase;
 }
 
